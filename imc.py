@@ -1,11 +1,10 @@
-peso = float(input("Digite seu peso"))
-nome = input ("Digite seu nome")
-altura = float(input("Digite sua altura"))
+peso = float(input("Digite seu peso em KG"))
+altura = float(input("Digite sua altura em metros"))
 imc = peso / (altura **2)
-print(f"seu IMC é {imc:.1f}")
+print(f"Seu IMC é {imc:.1f}")
 if imc < 18.5:
-    print("Classificação: abaixo do peso")
-elif imc < 25:
-    print("Classificção: peso ideal")
-else:
-    print("Classificção: Acima do peso")
+    print("Classificação: Abaixo do peso.")
+elif imc <25:
+    print ("Classificação: Peso Ideal")
+else: 
+    print("Classificação: Acima do peso")
